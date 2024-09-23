@@ -1,9 +1,8 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/event_management
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/event_management
     username: juan
     password: ""
-    driver-class-name: org.postgresql.Driver
-  logging:
-    level:
-      root: DEBUG
+    pool:
+      max-size: 10
+      min-size: 1
