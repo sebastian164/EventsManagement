@@ -1,0 +1,27 @@
+spring:
+  config:
+    activate:
+      on-profile: development
+
+---
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/event_management
+    username: juan
+    password: ""
+  logging:
+    level:
+      root: DEBUG
+
+---
+spring:
+  config:
+    activate:
+      on-profile: production
+  datasource:
+    url: jdbc:postgresql://produccion_host:5432/event_management
+    username: juan
+    password: ""
+  logging:
+    level:
+      root: ERROR
