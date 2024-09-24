@@ -1,7 +1,7 @@
 package com.innova.events.application.mapper;
 
-import com.innova.events.infrastructure.persistence.entity.ImageEntity;
 import com.innova.events.domain.dto.ImageDTO;
+import com.innova.events.infrastructure.persistence.entity.ImageEntity;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

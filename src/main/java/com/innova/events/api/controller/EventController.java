@@ -1,7 +1,7 @@
 package com.innova.events.application.controller;
 
-import com.innova.events.domain.dto.EventDTO;
 import com.innova.events.application.service.event.EventService;
+import com.innova.events.domain.dto.EventDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

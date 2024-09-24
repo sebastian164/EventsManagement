@@ -1,17 +1,13 @@
 package com.innova.events.application.mapper;
 
-import com.innova.events.domain.dto.UserDTO;
-import com.innova.events.infrastructure.persistence.entity.CompanyEntity;
 import com.innova.events.domain.dto.CompanyDTO;
-import com.innova.events.infrastructure.persistence.entity.UserEntity;
-import jakarta.persistence.*;
+import com.innova.events.infrastructure.persistence.entity.CompanyEntity;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 
 import java.util.List;
-import java.util.Set;
 
 @Mapper(componentModel = "spring")
 public interface CompanyMapper {

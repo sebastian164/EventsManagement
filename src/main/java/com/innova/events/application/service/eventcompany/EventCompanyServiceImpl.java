@@ -1,9 +1,9 @@
 package com.innova.events.application.service.eventcompany;
 
+import com.innova.events.application.mapper.EventCompanyMapper;
 import com.innova.events.domain.dto.EventCompanyDTO;
 import com.innova.events.infrastructure.persistence.entity.EventCompanyEntity;
 import com.innova.events.infrastructure.persistence.repository.EventCompanyRepository;
-import com.innova.events.application.mapper.EventCompanyMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;

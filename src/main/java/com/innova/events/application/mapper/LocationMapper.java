@@ -1,7 +1,7 @@
 package com.innova.events.application.mapper;
 
-import com.innova.events.infrastructure.persistence.entity.LocationEntity;
 import com.innova.events.domain.dto.LocationDTO;
+import com.innova.events.infrastructure.persistence.entity.LocationEntity;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

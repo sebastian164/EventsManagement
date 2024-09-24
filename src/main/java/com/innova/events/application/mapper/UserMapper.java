@@ -1,7 +1,7 @@
 package com.innova.events.application.mapper;
 
-import com.innova.events.infrastructure.persistence.entity.UserEntity;
 import com.innova.events.domain.dto.UserDTO;
+import com.innova.events.infrastructure.persistence.entity.UserEntity;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -19,6 +19,7 @@ public interface UserMapper {
             @Mapping(source = "company", target = "company"),
             @Mapping(source = "role", target = "role"),
             @Mapping(source = "profileImage", target = "profileImage"),
+            @Mapping(source = "active", target = "active"),
             @Mapping(target = "password", ignore = true)
     })
     UserDTO toUserDTO(UserEntity user);

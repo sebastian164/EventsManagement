@@ -3,7 +3,6 @@ package com.innova.events.application.service.company;
 import com.innova.events.application.mapper.CompanyMapper;
 import com.innova.events.domain.dto.CompanyDTO;
 import com.innova.events.infrastructure.persistence.entity.CompanyEntity;
-import com.innova.events.infrastructure.persistence.entity.EventEntity;
 import com.innova.events.infrastructure.persistence.repository.CompanyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

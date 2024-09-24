@@ -11,4 +11,5 @@ public class UserDTO {
     private CompanyDTO company;
     private RoleDTO role;
     private ImageDTO profileImage;
+    private Boolean active;
 }

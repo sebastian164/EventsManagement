@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: event_management
+  profiles:
+    active: dev
+
+springdoc:
+  api-docs:
+    path=/api-docs:

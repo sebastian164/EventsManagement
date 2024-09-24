@@ -1,9 +1,9 @@
 package com.innova.events.application.service.location;
 
+import com.innova.events.application.mapper.LocationMapper;
 import com.innova.events.domain.dto.LocationDTO;
 import com.innova.events.infrastructure.persistence.entity.LocationEntity;
 import com.innova.events.infrastructure.persistence.repository.LocationRepository;
-import com.innova.events.application.mapper.LocationMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,6 @@
 package com.innova.events.application.service.company;
 
 import com.innova.events.domain.dto.CompanyDTO;
-import com.innova.events.domain.dto.EventDTO;
 
 import java.util.List;
 

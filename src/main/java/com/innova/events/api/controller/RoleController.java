@@ -1,7 +1,6 @@
 package com.innova.events.api.controller;
 
 import com.innova.events.application.service.role.RoleService;
-import com.innova.events.application.service.role.RoleServiceImpl;
 import com.innova.events.domain.dto.RoleDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

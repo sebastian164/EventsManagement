@@ -1,7 +1,7 @@
 package com.innova.events.application.controller;
 
-import com.innova.events.domain.dto.LocationDTO;
 import com.innova.events.application.service.location.LocationService;
+import com.innova.events.domain.dto.LocationDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,7 +1,7 @@
 package com.innova.events.infrastructure.persistence.entity;
 
-import lombok.Data;
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Data
 @Entity
@@ -19,6 +19,9 @@ public class UserEntity {
 
     @Column(nullable = false, unique = true, length = 255)
     private String email;
+
+    @Column(nullable = false)
+    private Boolean active;
 
     @ManyToOne
     @JoinColumn(name = "company_id")
