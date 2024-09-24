@@ -3,8 +3,8 @@ package com.innova.events.domain.model;
 import lombok.Data;
 
 @Data
-public class Role {
+public class Image {
     private Long id;
-    private String name;
+    private String url;
     private String description;
 }

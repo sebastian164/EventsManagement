@@ -15,13 +15,12 @@
     <description>Events Control for Any Type</description>
     <properties>
         <java.version>17</java.version>
-        <r2dbc.postgresql.version>0.8.7.RELEASE</r2dbc.postgresql.version> <!-- Updated version -->
     </properties>
     <dependencies>
-        <!-- Spring Boot Starter WebFlux -->
+        <!-- Spring Boot Starter Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <!-- Spring Boot Starter Security -->
@@ -30,16 +29,17 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
-        <!-- R2DBC Starter for reactive database access -->
+        <!-- Spring Data JPA for relational database access -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-r2dbc</artifactId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
+        <!-- PostgreSQL JDBC Driver -->
         <dependency>
             <groupId>org.postgresql</groupId>
-            <artifactId>r2dbc-postgresql</artifactId>
-            <version>1.0.5.RELEASE</version>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.4</version>
         </dependency>
 
         <!-- JWT dependency -->
@@ -67,6 +67,27 @@
             <artifactId>lombok</artifactId>
             <version>1.18.24</version>
             <scope>provided</scope>
+        </dependency>
+
+        <!-- MapStruct dependency -->
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>1.5.5.Final</version>
+        </dependency>
+
+        <!-- Annotation Processor for MapStruct -->
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+            <version>1.5.5.Final</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.6.14</version>
         </dependency>
 
     </dependencies>

@@ -1,18 +1,19 @@
 package com.innova.events.domain.model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Table;
-import org.springframework.data.relational.core.mapping.Column;
 import lombok.Data;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 @Data
-@Table("events")
 public class Event {
-    @Id
     private Long id;
-    private String name;
-    private String date;
-    @Column("location_id")
-    private Long locationId;
+    private String title;
     private String description;
+    private LocalDateTime startDate;
+    private LocalDateTime endDate;
+    private Location location;
+    private List<EventCompany> eventCompanies;
+    private List<EventAttendee> eventAttendees;
+    private List<EventImage> eventImages;
 }
