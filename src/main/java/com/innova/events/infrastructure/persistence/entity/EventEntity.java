@@ -1,7 +1,8 @@
 package com.innova.events.infrastructure.persistence.entity;
 
-import lombok.Data;
 import jakarta.persistence.*;
+import lombok.Data;
+
 import java.sql.Timestamp;
 import java.util.Set;
 
@@ -9,6 +10,7 @@ import java.util.Set;
 @Entity
 @Table(name = "events")
 public class EventEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -28,4 +30,10 @@ public class EventEntity {
 
     @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<EventCompanyEntity> companies;
+
+    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<EventAttendeeEntity> attendees;
+
+    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<EventImageEntity> images;
 }

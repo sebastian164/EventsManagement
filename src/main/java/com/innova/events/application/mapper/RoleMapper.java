@@ -1,4 +1,4 @@
-package com.innova.events.infrastructure.persistence.mapper;
+package com.innova.events.application.mapper;
 
 import com.innova.events.infrastructure.persistence.entity.RoleEntity;
 import com.innova.events.domain.dto.RoleDTO;

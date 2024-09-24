@@ -1,4 +1,4 @@
-package com.innova.events.infrastructure.persistence.mapper;
+package com.innova.events.application.mapper;
 
 import com.innova.events.infrastructure.persistence.entity.ImageEntity;
 import com.innova.events.domain.dto.ImageDTO;
@@ -14,8 +14,8 @@ public interface ImageMapper {
 
     @Mappings({
             @Mapping(source = "id", target = "id"),
-            @Mapping(source = "path", target = "path"),
-            @Mapping(source = "altText", target = "altText"),
+            @Mapping(source = "path", target = "url"),
+            @Mapping(source = "altText", target = "description"),
             @Mapping(source = "uploadedAt", target = "uploadedAt")
     })
     ImageDTO toImageDTO(ImageEntity image);

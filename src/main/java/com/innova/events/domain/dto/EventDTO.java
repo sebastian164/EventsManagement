@@ -8,10 +8,9 @@ import java.util.List;
 @Data
 public class EventDTO {
     private Long id;
-    private String title;
+    private String name;
     private String description;
-    private LocalDateTime startDate;
-    private LocalDateTime endDate;
+    private LocalDateTime date;
     private LocationDTO location;
     private List<EventCompanyDTO> eventCompanies;
     private List<EventAttendeeDTO> eventAttendees;

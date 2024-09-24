@@ -5,6 +5,7 @@ import lombok.Data;
 @Data
 public class EventAttendeeDTO {
     private Long id;
-    private EventDTO event;
-    private UserDTO attendee;
+    private Long eventId;
+    private Long attendeeId;
+    private boolean attended;
 }

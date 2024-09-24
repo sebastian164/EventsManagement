@@ -1,4 +1,4 @@
-package com.innova.events.infrastructure.persistence.mapper;
+package com.innova.events.application.mapper;
 
 import com.innova.events.infrastructure.persistence.entity.LocationEntity;
 import com.innova.events.domain.dto.LocationDTO;
@@ -25,5 +25,4 @@ public interface LocationMapper {
     LocationEntity toLocationEntity(LocationDTO locationDTO);
 
     List<LocationDTO> toLocationDTOs(List<LocationEntity> locations);
-    List<LocationEntity> toLocationEntities(List<LocationDTO> locations);
 }

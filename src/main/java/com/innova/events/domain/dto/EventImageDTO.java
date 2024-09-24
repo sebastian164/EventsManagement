@@ -5,6 +5,7 @@ import lombok.Data;
 @Data
 public class EventImageDTO {
     private Long id;
-    private EventDTO event;
-    private ImageDTO image;
+    private Long eventId;
+    private Long imageId;
+    private Boolean isPrimary;
 }

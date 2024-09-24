@@ -1,9 +1,7 @@
-package com.innova.events.infrastructure.persistence.mapper;
+package com.innova.events.application.mapper;
 
 import com.innova.events.infrastructure.persistence.entity.EventCompanyEntity;
 import com.innova.events.domain.dto.EventCompanyDTO;
-import com.innova.events.infrastructure.persistence.mapper.EventMapper;
-import com.innova.events.infrastructure.persistence.mapper.CompanyMapper;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -11,13 +9,13 @@ import org.mapstruct.Mappings;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring", uses = {EventMapper.class, CompanyMapper.class})
+@Mapper(componentModel = "spring")
 public interface EventCompanyMapper {
 
     @Mappings({
             @Mapping(source = "id", target = "id"),
-            @Mapping(source = "event", target = "event"),
-            @Mapping(source = "company", target = "company")
+            @Mapping(source = "event.id", target = "eventId"),
+            @Mapping(source = "company.id", target = "companyId")
     })
     EventCompanyDTO toEventCompanyDTO(EventCompanyEntity eventCompany);
 

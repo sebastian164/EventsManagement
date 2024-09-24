@@ -3,6 +3,8 @@ package com.innova.events.infrastructure.persistence.entity;
 import lombok.Data;
 import jakarta.persistence.*;
 
+import java.util.Set;
+
 @Data
 @Entity
 @Table(name = "locations")
@@ -17,9 +19,9 @@ public class LocationEntity {
     @Column(length = 255)
     private String address;
 
-    @Column(precision = 9, scale = 6)
+    @Column(precision = 9)
     private Double latitude;
 
-    @Column(precision = 9, scale = 6)
+    @Column(precision = 9)
     private Double longitude;
 }

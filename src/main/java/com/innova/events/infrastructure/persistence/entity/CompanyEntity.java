@@ -21,7 +21,4 @@ public class CompanyEntity {
 
     @Column(length = 50)
     private String phone;
-
-    @OneToMany(mappedBy = "company", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<UserEntity> users;
 }
