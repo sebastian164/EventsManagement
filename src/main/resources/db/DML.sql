@@ -17,11 +17,16 @@ INSERT INTO images (path, alt_text) VALUES
 ('/images/event2.jpg', 'Evento 2'),
 ('/images/event3.jpg', 'Evento 3');
 
+INSERT INTO images (path, alt_text) VALUES
+('/images/usuario1_profile.jpg', 'Perfil de usuario 1'),
+('/images/usuario2_profile.jpg', 'Perfil de usuario 2'),
+('/images/usuario3_profile.jpg', 'Perfil de usuario 3');
+
 -- Insert users
 INSERT INTO users (username, password, email, company_id, role_id, profile_image_id) VALUES
-('usuario1', 'hashed_password_1', 'usuario1@mail.com', 1, 1, 1),
-('usuario2', 'hashed_password_2', 'usuario2@mail.com', 2, 2, 2),
-('usuario3', 'hashed_password_3', 'usuario3@mail.com', 1, 3, 3);
+('usuario1', 'hashed_password_1', 'usuario1@mail.com', 1, 1, 4),
+('usuario2', 'hashed_password_2', 'usuario2@mail.com', 2, 2, 5),
+('usuario3', 'hashed_password_3', 'usuario3@mail.com', 1, 3, 6);
 
 -- Insert locations
 INSERT INTO locations (name, address, latitude, longitude) VALUES
