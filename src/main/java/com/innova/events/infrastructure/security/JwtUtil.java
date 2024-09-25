@@ -18,9 +18,9 @@ public class JwtUtil {
     public String create(String username) {
         return JWT.create()
                 .withSubject(username)
-                .withIssuer("platzi-pizza")
+                .withIssuer("event-management")
                 .withIssuedAt(new Date())
-                .withExpiresAt(new Date(System.currentTimeMillis() + TimeUnit.DAYS.toMillis(15)))
+                .withExpiresAt(new Date(System.currentTimeMillis() + TimeUnit.HOURS.toMillis(2)))
                 .sign(ALGORITHM);
     }
 
