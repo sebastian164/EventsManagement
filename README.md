@@ -17,3 +17,6 @@ The Event Management Platform is an application designed to facilitate the effec
 - **Error Handling:** Proper management of exceptions and errors for a smooth user experience.
 
 With this platform, users will enjoy an optimized experience for managing and attending events, enhancing interaction and organization.
+
+Explain:
+https://drive.google.com/file/d/1juzA5r0f-1u0Whzi9T9gtJSWPa-6sUI2/view?usp=sharing
