@@ -5,6 +5,7 @@ import com.innova.events.domain.dto.UserDTO;
 import com.innova.events.infrastructure.persistence.entity.UserEntity;
 import com.innova.events.infrastructure.persistence.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +16,8 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Autowired
     private UserMapper userMapper;
@@ -36,6 +39,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDTO save(UserDTO userDTO) {
         UserEntity userEntity = userMapper.toUserEntity(userDTO);
+        String encryptedPassword = passwordEncoder.encode(userEntity.getPassword());
+        userEntity.setPassword(encryptedPassword);
         UserEntity savedUser = userRepository.save(userEntity);
         return userMapper.toUserDTO(savedUser);
     }
