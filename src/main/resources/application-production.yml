@@ -1,9 +1,10 @@
 spring:
   datasource:
-    url: jdbc:postgresql://produccion_host:5432/event_management
+    url: jdbc:postgresql://localhost:5432/event_management
     username: juan
     password: ""
     driver-class-name: org.postgresql.Driver
-  logging:
-    level:
-      root: ERROR
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
